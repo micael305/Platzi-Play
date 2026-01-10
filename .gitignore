@@ -35,3 +35,14 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Security & Local Config ###
+# Archivos de secretos (El que te sugerí antes)
+secrets.properties
+
+# Archivos de entorno comunes
+.env
+
+# Archivos de configuración local de Spring Boot (comunes en equipos)
+application-local.properties
+application-secret.properties
