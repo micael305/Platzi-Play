@@ -3,11 +3,15 @@ package com.platzi.play;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class PlatziPlayApplication {
+import java.util.TimeZone;
 
-	public static void main(String[] args) {
-		SpringApplication.run(PlatziPlayApplication.class, args);
-	}
+	@SpringBootApplication
+	public class PlatziPlayApplication {
 
-}
+		public static void main(String[] args) {
+			// 2. CONFIGURAR LA HORA AQUÍ (Primera línea, antes de que arranque Spring)
+			TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+
+			// 3. Iniciar la aplicación
+			SpringApplication.run(PlatziPlayApplication.class, args);
+		}}
