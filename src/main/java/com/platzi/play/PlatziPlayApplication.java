@@ -9,9 +9,9 @@ import java.util.TimeZone;
 	public class PlatziPlayApplication {
 
 		public static void main(String[] args) {
-			// 2. CONFIGURAR LA HORA AQUÍ (Primera línea, antes de que arranque Spring)
+			// CONFIGURAR LA HORA AQUÍ (Primera línea, antes de que arranque Spring)
 			TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
 
-			// 3. Iniciar la aplicación
+			// Iniciar la aplicación
 			SpringApplication.run(PlatziPlayApplication.class, args);
 		}}
